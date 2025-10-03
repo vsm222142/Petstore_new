@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(20deg,#c98fea,#931ed6);
+
+}
+
+footer{
+    text-align: center;
+    bottom: 0px;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(20deg,#c98fea,#931ed6);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color:#c98fea;
+    transform:scale(1.2);
+    padding:6px;
+    border-radius: 10%;
+}
+
+main div{
+    padding: 10px;
+    text-align: center;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: center;
+}
+
+.card{
+    padding: 10px;
+    background-color: #c98fea;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 10px 10px 10px rgb(196, 228, 15);
+}
+
+.card img{
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    background-color: #981ed6;
+    margin-top: 15px;
+
+}
+
+.card button{
+    background-color: #9bc20e;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.card button:hover{
+    background-color: aquamarine;
+}
+
+section{
+    margin-bottom: 30px;
+}
+
+.imgcard{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px greenyellow;
+    cursor: pointer;
+}
+
+.imgcard img{
+    width: 100%;
+    height: 100%;
+}
+
+.imgcard .overlay-text{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #c98fea;
+    color: black;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+}
+
+.imgcard:hover .overlay-text{
+    opacity: 0.7;
+}
